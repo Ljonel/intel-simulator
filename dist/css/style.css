@@ -1,0 +1,34 @@
+#body{
+    background-color: #ffbca1;
+}
+#main{
+    display: flex;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    height: 100vh;
+    margin-top: 20vh;
+
+}
+h1{
+    text-align: center;
+}
+.registers{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.commands{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.btn-block{
+    height: 50px;
+    margin-top: 25px;
+}

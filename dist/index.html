@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Intel8086 Simulator</title>
 </head>
-<body>
-    
+<body id="body">
+    <main id="main">
+        <section class="registers">
+            <h1>Registers</h1>
+            <div class="wrapper">
+                <label for="">AX</label>
+                <input type="text" class="form-control">
+                <label for="">BX</label>
+                <input type="text" class="form-control">
+                <label for="">CX</label>
+                <input type="text" class="form-control">
+                <label for="DX">DX</label>
+                <input type="text" class="form-control">
+            </div>
+        </section>
+        <section class="commands">
+            <form>
+                <h1>Commands</h1>
+                <label for="">Parameter 1</label>
+                <select id="par1" class="form-control">
+                    <option selected>AX</option>
+                    <option>BX</option>
+                    <option>CX</option>
+                    <option>DX</option>
+                </select>
+
+                <label for="">Parameter 2</label>
+                <select id="par2" class="form-control" >
+                    <option>AX</option>
+                    <option selected>BX</option>
+                    <option>CX</option>
+                    <option>DX</option>
+                </select>
+
+                <label for="">Commands</label>
+                <select id="command" class="form-control">
+                    <option selected>MOV</option>
+                    <option>ADD</option>
+                    <option>SUB</option>
+                </select>
+
+                <button type="submit" class="btn btn-dark btn-block">SUBMIT</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

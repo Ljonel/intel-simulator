@@ -5,9 +5,8 @@
     display: flex;
     width: 80%;
     margin: 0 auto 0 auto;
-    height: 100vh;
     margin-top: 20vh;
-
+    height: 100%;
 }
 h1{
     text-align: center;

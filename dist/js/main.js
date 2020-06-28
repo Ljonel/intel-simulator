@@ -42,22 +42,7 @@ document.addEventListener('DOMContentLoaded', function(){
       function Move(cmd){
         
       }
-
-        
-
-
-
-
-        
-        // item = document.getElementsByName("item"); //fruits is now a NodeList
-        // item.forEach(element => {
-        //     if(!element.value.length) {
-        //         alert("Nie mozesz zostawic pustego pola!");
-        //     }
-        //     else{
-                
-        //     }
-        // });
+      
     });
 });
 

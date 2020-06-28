@@ -20,19 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const cmd = document.getElementById("command").value;
             const firstParam = document.getElementById("par1").value;
             const secondParam = document.getElementById("par2").value;
- 
+            
+            const TfirstParam = parseInt(paramsMap[firstParam].value,2);    //params converted from binary to decimal
+            const TsecondParam = parseInt(paramsMap[secondParam].value,2);
+
             if (cmd === "MOV") {
                 paramsMap[firstParam].value = paramsMap[secondParam].value;
                 paramsMap[secondParam].value = paramsMap[firstParam].value;
             }
             else if(cmd === "ADD"){
-                const TfirstParam = parseInt(paramsMap[firstParam].value,2);
-                const TsecondParam = parseInt(paramsMap[secondParam].value,2);
-                const result = TfirstParam + TsecondParam;
-                paramsMap[firstParam].value = result.toString(2);
+                
+                const addResult = TfirstParam + TsecondParam;
+                paramsMap[firstParam].value = addResult.toString(2);
             }
             else if(cmd === "SUB"){
-                
+                const subResult = TfirstParam - TsecondParam;
+                paramsMap[firstParam].value = subResult.toString(2);
+            }
+            else{
+                alert("Something went wrong :(");
             }
         }
         else {

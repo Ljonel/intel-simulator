@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script type="text/javascript" src="/dist/js/main.js"></script>
     <title>Intel8086 Simulator</title>
 </head>
-<body id="body">
-    <main id="main">
+<body>
+    <main>
         <section class="registers">
             <h1>Registers</h1>
             <div class="wrapper">
@@ -44,13 +45,15 @@
                 <label for="">Commands</label>
                 <select id="command" class="form-control">
                     <option selected>MOV</option>
-                    <option>ADD</option>
-                    <option>SUB</option>
+                    <option>ADDITION</option>
+                    <option>SUBSTRACT</option>
                 </select>
 
                 <button id="btn" type="button" class="btn btn-dark btn-block">SUBMIT</button>
         </section>
     </main>
-   
+    <footer>
+        &copy Damian Cygan 12188
+    </footer>
 </body>
 </html>

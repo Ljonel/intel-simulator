@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("You have to enter all data");
         } else if (regex.test(ax.value) && regex.test(bx.value) && regex.test(cx.value) && regex.test(dx.value)) {
             const cmd = document.getElementById("command").value;
-            const firstParam = document.getElementById("par1").value;
+            const firstParam = document.getElementById("par1").value; 
             const secondParam = document.getElementById("par2").value;
             
             const TfirstParam = parseInt(paramsMap[firstParam].value,2);    //params converted from binary to decimal

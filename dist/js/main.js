@@ -25,6 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 paramsMap[firstParam].value = paramsMap[secondParam].value;
                 paramsMap[secondParam].value = paramsMap[firstParam].value;
             }
+            else if(cmd === "ADD"){
+                const TfirstParam = parseInt(paramsMap[firstParam].value,2);
+                const TsecondParam = parseInt(paramsMap[secondParam].value,2);
+                const result = TfirstParam + TsecondParam;
+                paramsMap[firstParam].value = result.toString(2);
+            }
+            else if(cmd === "SUB"){
+                
+            }
         }
         else {
             alert("Use binary code!");
